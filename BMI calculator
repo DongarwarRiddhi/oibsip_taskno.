@@ -1,0 +1,18 @@
+your_height = float(input("Please enter your height in centimetres: "))
+your_weight = float(input("Please enter your weight in kilograms: "))
+
+your_BMI = your_weight/(your_height/100)**2
+print("Your Body Mass Index(BMI) is", your_BMI)
+
+if your_BMI <= 18.5:
+    print("Oops!! You are underweight.")
+    print("You are having minimal health risk.")
+elif your_BMI <= 24.9:
+    print("Awesome! You are healthy.")
+    print("You have low health risk.")
+elif your_BMI <= 29.9:
+    print("Oops!! You are overweight.")
+    print("You are having high health risk.")
+else:
+    print("Oh no! You are obese.")
+    print("You should consult doctor as soon as possible.")
